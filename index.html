@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfólio | Programador e Designer Gráfico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Animação de digitação */
+     .typing {
+            font-size: 2rem;
+            font-weight: bold;
+            overflow: hidden;
+            border-right: 0.1em solid #f68a24; /* Cor do cursor */
+            white-space: nowrap;
+            margin: 0 auto;
+            animation: typing 3.5s steps(30) 1s 1 normal both, blinkCaret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blinkCaret {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        /* Estilos para o botão */
+        .btn-primary {
+            background-color: #f68a24;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #6b4fef;
+        }
+
+        /* Formatação da foto de perfil */
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        /* Formatação do contêiner geral */
+        .container-custom {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+
+    <!-- Header -->
+    <header class="h-screen flex items-center justify-center text-center bg-black">
+        <div class="container-custom">
+            <!-- Foto de perfil -->
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQGf4IG-m3azzw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1685448882841?e=1741824000&v=beta&t=4OdIxK7pvQvrMiC5cy1-WZy-58hXFOeJfBoNh45S7KI" alt="Sua Foto" class="profile-img mx-auto">
+            <h1 class="text-5xl mt-6 text-white">Olá, meu nome é</h1>
+            <div class="mt-4">
+                <span class="typing">Breno Polezi</span>
+            </div>
+            <p class="mt-6 text-xl">Sou Programador Full Stack e Designer Gráfico e GAY</p>
+            <a href="#projetos" class="btn-primary mt-6 inline-block">Veja meus Projetos</a>
+        </div>
+    </header>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-40 bg-gray-800 text-center">
+        <div class="container-custom">
+            <h2 class="text-4xl font-semibold text-white">Sobre Mim</h2>
+            <p class="mt-4 text-lg text-gray-300">Combinando a paixão por **tecnologia** e **design**, crio soluções digitais que unem funcionalidade e estética. Sou um programador full-stack com experiência em diversas tecnologias, e também me dedico a criar designs inovadores e funcionais.</p>
+            <a href="#contato" class="btn-primary mt-6 inline-block">Entre em Contato</a>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="py-40 bg-black text-center">
+        <div class="container-custom">
+            <h2 class="text-4xl font-semibold text-white">Meus Projetos</h2>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Projeto 1 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/350" alt="Projeto 1" class="mb-6 rounded-lg">
+                    <h3 class="text-2xl text-white">Projeto 1</h3>
+                    <p class="text-gray-300 mt-2">Este projeto é uma combinação de **design responsivo** e **interatividade** usando tecnologias modernas.</p>
+                    <a href="https://github.com" class="text-f68a24 hover:text-white mt-4 block">Ver no GitHub</a>
+                </div>
+                <!-- Projeto 2 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/350" alt="Projeto 2" class="mb-6 rounded-lg">
+                    <h3 class="text-2xl text-white">Projeto 2</h3>
+                    <p class="text-gray-300 mt-2">Uma aplicação web interativa usando **ReactJS** e **TailwindCSS**, com foco na experiência do usuário.</p>
+                    <a href="https://github.com" class="text-f68a24 hover:text-white mt-4 block">Ver no GitHub</a>
+                </div>
+                <!-- Projeto 3 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/350" alt="Projeto 3" class="mb-6 rounded-lg">
+                    <h3 class="text-2xl text-white">Projeto 3</h3>
+                    <p class="text-gray-300 mt-2">Design e desenvolvimento de interfaces **UX/UI** para criar um design intuitivo e atraente.</p>
+                    <a href="https://github.com" class="text-f68a24 hover:text-white mt-4 block">Ver no GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-40 bg-gray-800 text-center">
+        <div class="container-custom">
+            <h2 class="text-4xl font-semibold text-white">Entre em Contato</h2>
+            <form action="#" method="POST" class="mt-8 max-w-xl mx-auto">
+                <input type="text" name="nome" placeholder="Seu Nome" class="p-4 rounded-lg mb-4 w-full text-black" required>
+                <input type="email" name="email" placeholder="Seu E-mail" class="p-4 rounded-lg mb-4 w-full text-black" required>
+                <textarea name="mensagem" placeholder="Sua Mensagem" class="p-4 rounded-lg mb-4 w-full text-black" required></textarea>
+                <button type="submit" class="btn-primary">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10 text-center">
+        <p>&copy; 2025 [Seu Nome]. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
